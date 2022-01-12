@@ -1,0 +1,28 @@
+body {
+    font: sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+header {
+    font:  Caveat;
+    color: #0e3c7e;
+}
+
+.AdDesigner{
+    background-color: white;
+}
+
+.AdContainerdark{
+    text-align: center;
+    background-color: rgb(70, 142, 145);
+    color: white;
+    border: solid black;
+    border-radius: 5px;
+    width: 150 px;
+}
+button{
+    background-color: #0e3c7e;
+    border-radius: 5px;
+    padding: 5px;
+}
