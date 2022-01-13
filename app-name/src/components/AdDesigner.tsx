@@ -63,13 +63,9 @@ function AdDesigner() {
         <div></div>
         <p>Font Size</p>
         <div></div>
-        <button onClick={() => setFontSize((size) => (size = fontSize + 1))}>
-          Up
-        </button>
-        <p>{fontSize}</p>
-        <button onClick={() => setFontSize((size) => (size = fontSize - 1))}>
-          Down
-        </button>
+        <button onClick={() => setFontSize((size) => (size = fontSize + 1))}>Up</button> {fontSize}   
+        <button onClick={() => setFontSize((size) => (size = fontSize - 1))}>Down</button>
+        <div></div>
         <div></div>
       </section>
     </div>
