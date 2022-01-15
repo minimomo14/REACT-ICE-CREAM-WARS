@@ -44,7 +44,7 @@ function Votes() {
   return (
     <div className="Votes">
       <div></div>
-      <h2 className="font-link">Vote Here</h2>
+      <h2 className="FontStyle">Vote Here</h2>
       <button
         onClick={() =>
           setStrawberryVote((count) => (count = strawberryVote + 1))

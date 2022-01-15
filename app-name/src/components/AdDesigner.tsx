@@ -1,30 +1,28 @@
 import React, { useState } from "react";
 import "./Styles.css";
+import Ad from "./Ad";
 
 function AdDesigner() {
   const [flavor, setFlavor] = useState("Choose a flavor");
   const [fontSize, setFontSize] = useState(20);
   const [theme, setTheme] = useState(false);
-  let darkTheme = "";
-  if (theme) {
-    darkTheme = "dark";
-  }
+  //comment out darkTheme (ctlrl+K+C) undone (ctrl+K+U)
+  // let darkTheme = "";
+  // if (theme) {
+  //   darkTheme = "dark";
+  // }
 
-  const FontStyle = {
-    fontSize: fontSize + "px",
-  };
+  
 
   return (
     <div className="AdDesigner">
-      <h2 className="font-link">Ad Designer</h2>
-      <div className={"AdContainer" + darkTheme}>
-        <p>Vote For</p>
-        <h3 style={FontStyle}>{flavor}</h3>
-      </div>
-      <br></br>
-      <section>
+      <h2 className="AdDesigner_header">Ad Designer</h2>
+        <section>
         <p>What to support</p>
         <div></div>
+
+        <Ad flavor={flavor} fontSize={fontSize} theme={theme} />
+
         <button
           disabled={flavor === "Strawberry"}
           onClick={() => setFlavor((flavor) => (flavor = "Strawberry"))}
