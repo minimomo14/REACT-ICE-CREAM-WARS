@@ -10,8 +10,11 @@ function App() {
   return (
     <div className="App">
       <Header user="Chirpus" />
+      
+      <div className="AppContainer">
       <AdDesigner />
       <Votes />
+      </div>
     </div>
   );
 }
