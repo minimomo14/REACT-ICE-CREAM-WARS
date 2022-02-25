@@ -45,23 +45,13 @@ function Votes() {
     <div className="Votes">
       <div></div>
       <h2 className="FontStyle">Vote Here</h2>
-      <button
-        onClick={() =>
-          setStrawberryVote((count) => (count = strawberryVote + 1))
-        }
-      >
+      <button onClick={() => setStrawberryVote(strawberryVote + 1)}>
         Strawberry
       </button>
-      <button
-        onClick={() => setCoconutMilk((count) => (count = coconutMilkVote + 1))}
-      >
+      <button onClick={() => setCoconutMilk(coconutMilkVote + 1)}>
         Coconut Milk
       </button>
-      <button
-        onClick={() =>
-          setCookiesAndCream((count) => (count = cookiesAndCreamVote + 1))
-        }
-      >
+      <button onClick={() => setCookiesAndCream(cookiesAndCreamVote + 1)}>
         Cookies and Cream
       </button>
 
@@ -70,14 +60,14 @@ function Votes() {
       <div className="Strawberry" style={StrawberryStyle}></div>
       {strawberryVote > 0 && (
         <p>
-          Strawberry: {strawberryVote} votes | {strawberryPercentage}%
+          Strawberry: {strawberryVote} votes | {strawberryPercentage.toFixed()}%
         </p>
       )}
 
       <div className="CoconutMilk" style={CoconutMilkStyle}></div>
       {coconutMilkVote > 0 && (
         <p>
-          Coconut Milk: {coconutMilkVote} votes | {coconutMilkPercentage}%
+          Coconut Milk: {coconutMilkVote} votes | {coconutMilkPercentage.toFixed()}%
         </p>
       )}
 
@@ -85,7 +75,7 @@ function Votes() {
       {cookiesAndCreamVote > 0 && (
         <p>
           Cookies and Cream: {cookiesAndCreamVote} votes |{" "}
-          {cookiesAndCreamPercentage}%
+          {cookiesAndCreamPercentage.toFixed()}%
         </p>
       )}
     </div>
